@@ -12,10 +12,10 @@ Source0:	http://download.kde.org/stable/applications/%{kdeappsver}/src/%{kaname}
 URL:		http://www.kde.org/
 BuildRequires:	Qt5Core-devel >= %{qtver}
 BuildRequires:	cmake >= 2.8.12
-BuildRequires:	phonon-devel >= 4.10.0
+BuildRequires:	phonon-devel
 BuildRequires:	kf5-extra-cmake-modules >= 1.4.0
 BuildRequires:	qt5-build >= %{qtver}
-BuildRequires:	qt5-phonon-devel >= 4.10.0
+BuildRequires:	qt5-phonon-devel
 BuildRequires:	rpmbuild(macros) >= 1.164
 BuildRequires:	shared-mime-info
 BuildRequires:	tar >= 1:1.22
