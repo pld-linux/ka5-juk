@@ -1,21 +1,20 @@
-%define		kdeappsver	19.04.1
+%define		kdeappsver	20.12.3
 %define		kframever	5.56.0
 %define		qtver		5.9.0
 %define		kaname		juk
 Summary:	Juk
 Name:		ka5-%{kaname}
-Version:	19.04.1
+Version:	20.12.3
 Release:	1
 License:	GPL v2+/LGPL v2.1+
 Group:		X11/Multimedia
-Source0:	http://download.kde.org/stable/applications/%{kdeappsver}/src/%{kaname}-%{version}.tar.xz
-# Source0-md5:	4f5934d76c96383ade4cb70116ac6fde
+Source0:	http://download.kde.org/stable/release-service/%{kdeappsver}/src/%{kaname}-%{version}.tar.xz
+# Source0-md5:	2742a0e64705ba819d2026d96feb8a85
 URL:		http://www.kde.org/
 BuildRequires:	Qt5Core-devel >= %{qtver}
 BuildRequires:	cmake >= 2.8.12
 BuildRequires:	kf5-extra-cmake-modules >= %{kframever}
 BuildRequires:	ninja
-BuildRequires:	phonon-devel
 BuildRequires:	qt5-build >= %{qtver}
 BuildRequires:	qt5-phonon-devel
 BuildRequires:	rpmbuild(macros) >= 1.164
@@ -89,3 +88,4 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/juk
 %{_datadir}/kservices5/ServiceMenus/jukservicemenu.desktop
 %{_datadir}/kxmlgui5/juk
+%{_datadir}/knotifications5/juk.notifyrc
