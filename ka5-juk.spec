@@ -46,6 +46,30 @@ Features
 • ID3v1, ID3v2 and Ogg Vorbis tag reading and editing support (via
   TagLib).
 
+%description -l pl.UTF-8
+JuK to aplikacja szafy grającej, obsługująca kolekcje plików MP3,
+Ogg Vorbis i FLAC. Program pozwala edytować tagi plików dźwiękowych,
+zarządzać kolekcjami i listami odtwarzania. Głównie kładzie nacisk
+na zarządzanie muzyką.
+
+Właściwości
+
+• Listy kolekcji i wiele definiowanych przez użytkownika playlist.
+• Możliwość przeszukawania katalogów i automatyczne importowanie
+  list odtwarzania i plików muzycznych na starcie.
+• Dynamiczne przeszukiwanie playlist, które są automatycznie
+  uaktualniane, gdy jakieś pola w kolekcji się zmienią.
+• Tryb widoku drzewa, gdzie playlisty są automatycznie generowane
+  dla zestawów albumów, artystów i gatunków muzycznych.
+• Historia odtwarzania, która wskazuje które pliki były odtwarzane
+  i kiedy.
+• Przeszukiwanie i filtrowanie widocznych elementów listy.
+• Możliwość odgadnięcia informacji o tagach na podstawie nazwy pliku
+  lub korzystając z zapytań do bazy MusicBrainz online.
+• Inteligentne zmiany nazw plików na podstawie tagów.
+• Czytanie i edycja znaczników ID3v1, ID3v2 i Ogg Vorbis (przy użyciu
+  TagLib).
+
 %prep
 %setup -q -n %{kaname}-%{version}
 
