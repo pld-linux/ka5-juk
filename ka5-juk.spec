@@ -1,18 +1,18 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeappsver	21.12.3
+%define		kdeappsver	22.04.0
 %define		kframever	5.83.0
 %define		qtver		5.9.0
 %define		kaname		juk
 Summary:	Juk
 Name:		ka5-%{kaname}
-Version:	21.12.3
+Version:	22.04.0
 Release:	1
 License:	GPL v2+/LGPL v2.1+
 Group:		X11/Multimedia
 Source0:	http://download.kde.org/stable/release-service/%{kdeappsver}/src/%{kaname}-%{version}.tar.xz
-# Source0-md5:	f734584f8a61f0aafa72e6b2223d7956
+# Source0-md5:	eb842373034ed3c4e75ef0a0a889e387
 URL:		http://www.kde.org/
 BuildRequires:	Qt5Core-devel >= %{qtver}
 BuildRequires:	cmake >= 2.8.12
@@ -120,6 +120,6 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/metainfo/org.kde.juk.appdata.xml
 %{_desktopdir}/org.kde.juk.desktop
 %{_datadir}/juk
-%{_datadir}/kservices5/ServiceMenus/jukservicemenu.desktop
 %{_datadir}/kxmlgui5/juk
 %{_datadir}/knotifications5/juk.notifyrc
+/usr/share/kio/servicemenus/jukservicemenu.desktop
