@@ -1,18 +1,18 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeappsver	23.08.0
+%define		kdeappsver	23.08.1
 %define		kframever	5.94.0
 %define		qtver		5.15.2
 %define		kaname		juk
 Summary:	Juk
 Name:		ka5-%{kaname}
-Version:	23.08.0
+Version:	23.08.1
 Release:	1
 License:	GPL v2+/LGPL v2.1+
 Group:		X11/Multimedia
 Source0:	https://download.kde.org/stable/release-service/%{kdeappsver}/src/%{kaname}-%{version}.tar.xz
-# Source0-md5:	1a00de6f873fabf17a59d7fa6ef6973d
+# Source0-md5:	b40066f99c553fb4340bb6d7a0bd3624
 URL:		http://www.kde.org/
 BuildRequires:	Qt5Core-devel >= %{qtver}
 BuildRequires:	cmake >= 3.20
