@@ -20,7 +20,7 @@ BuildRequires:	kf5-extra-cmake-modules >= %{kframever}
 BuildRequires:	kf5-kwallet-devel >= %{kframever}
 BuildRequires:	ninja
 BuildRequires:	qt5-build >= %{qtver}
-BuildRequires:	qt5-phonon-devel
+BuildRequires:	phonon-qt5-devel
 BuildRequires:	rpmbuild(macros) >= 1.164
 BuildRequires:	shared-mime-info
 BuildRequires:	tar >= 1:1.22
